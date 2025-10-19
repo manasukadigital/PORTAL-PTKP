@@ -51,7 +51,12 @@ export const menuData: MenuItemType[] = [
       { label: 'DIREKTUR', link: 'https://portal-ptkp.com/direktur-kp/' },
       { label: 'MR', link: 'https://portal-ptkp.com/team-fungsional-qa/' },
       { label: 'BAGIAN PDD & EDP', link: 'https://portal-ptkp.com/pengendali-dokumen-data/' },
-      { label: 'BAGIAN AMI', link: 'https://portal-ptkp.com/audit-mutu-internal-pt-khari.vercel.app/' },
+      {
+        label: 'BAGIAN AMI',
+        children: [
+          { label: 'PORTAL AUDIT MUTU INTERNAL', link: 'https://portal-audit-mutu-internal-pt-khari.vercel.app/' },
+        ]
+      },
       { label: 'BAGIAN TRAINING', link: 'https://portal-ptkp.com/training-pelatihan/' },
       { label: 'BAGIAN KALIBRASI', link: 'https://portal-ptkp.com/kalibrasi/' },
       { label: 'LOGIN PERIJINAN', link: 'https://ijin.portal-ptkp.com/login/' },
@@ -65,8 +70,8 @@ export const menuData: MenuItemType[] = [
       {
         label: 'BAGIAN PEMASARAN',
         children: [
-          { 
-            label: 'DOKUMEN BAGIAN PEMASARAN', 
+          {
+            label: 'DOKUMEN BAGIAN PEMASARAN',
             link: 'https://portal-ptkp.com/bagian-pemasaran/',
             children: [
                 { label: '1. Sasaran Mutu Bagian Pemasaran' },
@@ -75,12 +80,12 @@ export const menuData: MenuItemType[] = [
                 { label: '4. Analisa SWOT' },
             ]
           },
-          { 
-            label: 'REKAMAN BAGIAN PEMASARAN', 
+          {
+            label: 'REKAMAN BAGIAN PEMASARAN',
             link: 'https://portal-ptkp.com/rekaman-bagian-pemasaran/',
             children: [
                 { label: '1. Daftar Utama Rekaman'},
-                { 
+                {
                     label: '2. Target Pencapaian Sasaran Mutu',
                     children: [
                         { label: '2.1. Form Pencapaian Sasaran Mutu 2025'},
@@ -116,14 +121,14 @@ export const menuData: MenuItemType[] = [
                 { label: '4. Analisa SWOT' }
             ]
           },
-          { 
+          {
             label: 'REKAMAN BAGIAN DESIGN',
             children: [
                 { label: '1. Daftar Utama Rekaman', link: 'https://portal-ptkp.com/daftar-utama-rekaman-bagian-design/'},
                 {
                     label: '2. Target Pencapaian Sasaran Mutu',
                     children: [
-                        { label: '2.1. Form Pencapaian Sasaran Mutu 2025', link: 'https://docs.google.com/forms/d/e/1FAIpQLSeU2QSNscFOtYYkLOADgUnnF-g5k-f6n7cT5qXg0bfoS-1w/viewform'},
+                        { label: '2.1. Form Pencapaian Sasaran Mutu 2025', link: 'https://docs.google.com/forms/d/e/1FAIpQLSeU2QSNacFOtYYkLOADgUnnF-g5k-f6n7cT5qXg0bfoS-1w/viewform'},
                         { label: '2.2. Report Pencapaian Sasaran Mutu 2025', link: 'https://docs.google.com/spreadsheets/d/e/1dimgsVBjPmEgRw07IngtZxBa_2MygC7yv9gWX6S2X8ufO0a54O0_lq-I75rI8Q/pubhtml?gid=1530985438&single=true'},
                         { label: '2.3. Grafik Pencapaian Sasaran Mutu 2025', link: 'https://docs.google.com/presentation/d/e/2PACX-1vRA4o2ebhSHhqolxOAY-8WkIQRo0KPaxp1qEx-OQRhV0p-Qv2N2-Jt9Fq2N-2OaN-aOaO/pub?start=false&loop=false&delayms=3000'},
                         { label: '2.4. Form Pencapaian Sasaran Mutu 2024', link: 'https://forms.gle/AkVWpC8KXqBeLpzv9' },
@@ -140,7 +145,7 @@ export const menuData: MenuItemType[] = [
         label: 'BAGIAN QC & DELIVERY',
         children: [
           {
-            label: 'DOKUMEN BAGIAN QC & DELIVERY', 
+            label: 'DOKUMEN BAGIAN QC & DELIVERY',
             link: 'https://portal-ptkp.com/bagian-qc-delivery/',
             children: [
               { label: '1. Sasaran Mutu Bagian QC & Delivery' },
@@ -149,11 +154,21 @@ export const menuData: MenuItemType[] = [
             ]
           },
           {
-            label: 'REKAMAN BAGIAN QC & DELIVERY', 
+            label: 'REKAMAN BAGIAN QC & DELIVERY',
             link: 'https://portal-ptkp.com/rekaman-bagian-qc-delivery/',
             children: [
               { label: '1. Daftar Utama Rekaman' },
-              { label: '2. Target Pencapaian Sasaran Mutu' },
+              { 
+                label: '2. Target Pencapaian Sasaran Mutu',
+                children: [
+                  { label: '2.1. Form Pencapaian Sasaran Mutu 2025'},
+                  { label: '2.2. Report Pencapaian Sasaran Mutu 2025'},
+                  { label: '2.3. Grafik Pencapaian Sasaran Mutu 2025'},
+                  { label: '2.4. Form Pencapaian Sasaran Mutu 2024'},
+                  { label: '2.5. Report Pencapaian Sasaran Mutu 2024'},
+                  { label: '2.6. Grafik Pencapaian Sasaran Mutu 2024'},
+                ]
+              },
               { label: '3. Analisa SWOT' }
             ]
           },
@@ -172,8 +187,8 @@ export const menuData: MenuItemType[] = [
       {
         label: 'BAGIAN LABORATORIUM',
         children: [
-          { 
-            label: 'DOKUMEN BAGIAN LABORATORIUM', 
+          {
+            label: 'DOKUMEN BAGIAN LABORATORIUM',
             link: 'https://portal-ptkp.com/bagian-laboratorium/',
             children: [
               { label: '1. Sasaran Mutu Bagian Lab' },
@@ -181,12 +196,22 @@ export const menuData: MenuItemType[] = [
               { label: '3. Job Description' }
             ]
           },
-          { 
-            label: 'REKAMAN BAGIAN LABORATORIUM', 
+          {
+            label: 'REKAMAN BAGIAN LABORATORIUM',
             link: 'https://portal-ptkp.com/rekaman-bagian-laboratorium/',
             children: [
                 { label: '1. Daftar Utama Rekaman'},
-                { label: '2. Target Pencapaian Sasaran Mutu'},
+                { 
+                  label: '2. Target Pencapaian Sasaran Mutu',
+                  children: [
+                    { label: '2.1. Form Pencapaian Sasaran Mutu 2025'},
+                    { label: '2.2. Report Pencapaian Sasaran Mutu 2025'},
+                    { label: '2.3. Grafik Pencapaian Sasaran Mutu 2025'},
+                    { label: '2.4. Form Pencapaian Sasaran Mutu 2024'},
+                    { label: '2.5. Report Pencapaian Sasaran Mutu 2024'},
+                    { label: '2.6. Grafik Pencapaian Sasaran Mutu 2024'},
+                  ]
+                },
                 { label: '3. Analisa SWOT'}
             ]
           },
@@ -195,8 +220,8 @@ export const menuData: MenuItemType[] = [
       {
         label: 'BAGIAN PPC',
         children: [
-          { 
-            label: 'DOKUMEN BAGIAN PPC', 
+          {
+            label: 'DOKUMEN BAGIAN PPC',
             link: 'https://portal-ptkp.com/bagian-ppc/',
             children: [
                 { label: '1. Sasaran Mutu Bagian PPC' },
@@ -204,12 +229,22 @@ export const menuData: MenuItemType[] = [
                 { label: '3. Job Description' }
             ]
           },
-          { 
-            label: 'REKAMAN BAGIAN PPC', 
+          {
+            label: 'REKAMAN BAGIAN PPC',
             link: 'https://portal-ptkp.com/rekaman-bagian-ppc/',
             children: [
                 { label: '1. Daftar Utama Rekaman' },
-                { label: '2. Target Pencapaian Sasaran Mutu' },
+                { 
+                  label: '2. Target Pencapaian Sasaran Mutu',
+                  children: [
+                    { label: '2.1. Form Pencapaian Sasaran Mutu 2025'},
+                    { label: '2.2. Report Pencapaian Sasaran Mutu 2025'},
+                    { label: '2.3. Grafik Pencapaian Sasaran Mutu 2025'},
+                    { label: '2.4. Form Pencapaian Sasaran Mutu 2024'},
+                    { label: '2.5. Report Pencapaian Sasaran Mutu 2024'},
+                    { label: '2.6. Grafik Pencapaian Sasaran Mutu 2024'},
+                  ]
+                },
                 { label: '3. Analisa SWOT'}
             ]
           },
