@@ -24,7 +24,7 @@ const DashboardSubMenuItem: React.FC<DashboardSubMenuItemProps> = ({ item, level
   const hasChildren = item.children && item.children.length > 0;
 
   const baseClasses = "w-full text-left flex items-center justify-between p-3 rounded-lg transition-all duration-200 glass-card border-none bg-white/5 hover:bg-white/10";
-  const textClasses = "text-yellow-200 text-lg flex-grow pr-2";
+  const textClasses = "text-slate-200 text-lg flex-grow pr-2";
   
   let mainElement;
 
@@ -64,7 +64,7 @@ const DashboardSubMenuItem: React.FC<DashboardSubMenuItemProps> = ({ item, level
     // If it's just a label (e.g., "Analisa SWOT" without a link)
     mainElement = (
       <div className={`${baseClasses} hover:bg-transparent cursor-default`}>
-        <span className="text-yellow-300 opacity-80 text-lg">{item.label}</span>
+        <span className="text-slate-300 opacity-80 text-lg">{item.label}</span>
       </div>
     );
   }

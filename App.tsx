@@ -5,19 +5,8 @@ import type { MenuItemType } from './types';
 import { menuData } from './constants';
 import DashboardCard from './components/DashboardCard';
 
-// Helper to find the first L1 item to be the default selection
-const findInitialSelectedItem = (): MenuItemType | null => {
-  for (const l0 of menuData) {
-    if (l0.children && l0.children.length > 0) {
-      // Return the first child of the first parent that has children
-      return l0.children[0];
-    }
-  }
-  return null;
-};
-
 const App: React.FC = () => {
-  const [selectedItem, setSelectedItem] = useState<MenuItemType | null>(findInitialSelectedItem());
+  const [selectedItem, setSelectedItem] = useState<MenuItemType | null>(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const handleSelectItem = (item: MenuItemType | null) => {
@@ -62,14 +51,17 @@ const App: React.FC = () => {
           ) : (
             // Default Welcome View
             <div className="h-full flex items-center justify-center p-4">
-              <div className="glass-card rounded-2xl p-8 md:p-12 text-center relative overflow-hidden">
+              <div className="glass-card rounded-2xl p-8 md:p-12 text-center relative overflow-hidden max-w-3xl">
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-teal-500/10 to-blue-500/10 opacity-50"></div>
                 <div className="relative">
                     <h1 className="text-4xl md:text-5xl font-extrabold leading-tight gradient-text">
-                        Selamat Datang di Portal
+                        Selamat Datang di Portal Mutu PT. Kharisma Printex
                     </h1>
-                    <p className="mt-4 text-lg md:text-xl text-slate-300">
-                        Pilih item dari menu di sebelah kiri untuk menampilkan dokumen.
+                    <p className="mt-6 text-lg md:text-xl text-slate-300">
+                        Portal ini adalah pusat informasi terpusat untuk Sistem Manajemen Mutu ISO 9001:2015 kami.
+                    </p>
+                    <p className="mt-4 text-md md:text-lg text-slate-400">
+                        Di sini Anda dapat dengan mudah mengakses profil perusahaan, prosedur kerja, rekaman mutu, dan dokumen penting lainnya untuk setiap departemen. Silakan gunakan menu di sebelah kiri untuk memulai navigasi.
                     </p>
                 </div>
               </div>
