@@ -51,7 +51,7 @@ export const menuData: MenuItemType[] = [
       { label: 'DIREKTUR', link: 'https://portal-ptkp.com/direktur-kp/' },
       { label: 'MR', link: 'https://portal-ptkp.com/team-fungsional-qa/' },
       { label: 'BAGIAN PDD & EDP', link: 'https://portal-ptkp.com/pengendali-dokumen-data/' },
-      { label: 'BAGIAN AMI', link: 'https://portal-ptkp.com/audit-mutu-internal/' },
+      { label: 'BAGIAN AMI', link: 'https://portal-ptkp.com/audit-mutu-internal-pt-khari.vercel.app/' },
       { label: 'BAGIAN TRAINING', link: 'https://portal-ptkp.com/training-pelatihan/' },
       { label: 'BAGIAN KALIBRASI', link: 'https://portal-ptkp.com/kalibrasi/' },
       { label: 'LOGIN PERIJINAN', link: 'https://ijin.portal-ptkp.com/login/' },
@@ -66,12 +66,13 @@ export const menuData: MenuItemType[] = [
         label: 'BAGIAN PEMASARAN',
         children: [
           { 
-            label: 'DOKUMEN BAGIAN PEMASaran', 
+            label: 'DOKUMEN BAGIAN PEMASARAN', 
             link: 'https://portal-ptkp.com/bagian-pemasaran/',
             children: [
                 { label: '1. Sasaran Mutu Bagian Pemasaran' },
                 { label: '2. Struktur Organisasi' },
                 { label: '3. Job Description' },
+                { label: '4. Analisa SWOT' },
             ]
           },
           { 
@@ -100,12 +101,12 @@ export const menuData: MenuItemType[] = [
         children: [
           {
             label: 'DOKUMEN BAGIAN DESIGN',
+            link: 'https://portal-ptkp.com/bagian-design/',
             children: [
-                { label: '1. Sasaran Mutu Bagian Desain', link: 'https://portal-ptkp.com/bagian-design/'},
-                { label: '2. Struktur Organisasi', link: 'https://portal-ptkp.com/bagian-design/'},
+                { label: '1. Sasaran Mutu Bagian Desain' },
+                { label: '2. Struktur Organisasi' },
                 {
                     label: '3. Job Description',
-                    link: 'https://portal-ptkp.com/bagian-design/',
                     children: [
                         { label: '3.1. Job Description Ka.Bag. Desain', link: 'https://portal-ptkp.com/id-ka-bag-design-2/'},
                         { label: '3.2. Job Description Checker Desain', link: 'https://portal-ptkp.com/jd-checker-design/'},
@@ -198,7 +199,7 @@ export const menuData: MenuItemType[] = [
             label: 'DOKUMEN BAGIAN PPC', 
             link: 'https://portal-ptkp.com/bagian-ppc/',
             children: [
-                { label: '1. Sasaran Mutu Bagian QC & Delivery' },
+                { label: '1. Sasaran Mutu Bagian PPC' },
                 { label: '2. Struktur Organisasi' },
                 { label: '3. Job Description' }
             ]
@@ -266,8 +267,8 @@ export const menuData: MenuItemType[] = [
       {
         label: 'BAGIAN IPAL & LIMBAH B3',
         children: [
-          { label: 'DOKUMEN IPAL & LIMBAH B3', link: 'https://portal-ptkp.com/bagian-ipal-dan-limbah-b3/' },
-          { label: 'REKAMAN IPAL & LIMBAH B3', link: 'https://portal-ptkp.com/rekaman-bagian-ipal-limbah-b3/' },
+          { label: 'DOKUMEN BAGIAN IPAL & LIMBAH B3', link: 'https://portal-ptkp.com/bagian-ipal-dan-limbah-b3/' },
+          { label: 'REKAMAN BAGIAN IPAL & LIMBAH B3', link: 'https://portal-ptkp.com/rekaman-bagian-ipal-limbah-b3/' },
         ],
       },
       {
