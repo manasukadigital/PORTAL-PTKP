@@ -51,18 +51,28 @@ const App: React.FC = () => {
           ) : (
             // Default Welcome View
             <div className="h-full flex items-center justify-center p-4">
-              <div className="glass-card rounded-2xl p-8 md:p-12 text-center relative overflow-hidden max-w-3xl">
+              <div className="glass-card rounded-2xl p-6 sm:p-8 md:p-12 text-center relative overflow-hidden max-w-3xl mx-auto">
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-teal-500/10 to-blue-500/10 opacity-50"></div>
                 <div className="relative">
-                    <h1 className="text-4xl md:text-5xl font-extrabold leading-tight gradient-text">
+                    <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-teal-500 to-sky-600 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-9 w-9 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight gradient-text">
                         Selamat Datang di Portal Mutu PT. Kharisma Printex
                     </h1>
-                    <p className="mt-6 text-lg md:text-xl text-slate-300">
-                        Portal ini adalah pusat informasi terpusat untuk Sistem Manajemen Mutu ISO 9001:2015 kami.
+                    <p className="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed">
+                        Portal ini dirancang untuk menjadi pusat informasi terpadu Anda, memastikan akses yang <strong>cepat, mudah, dan terorganisir</strong> ke seluruh dokumen dan rekaman mutu ISO 9001:2015.
                     </p>
-                    <p className="mt-4 text-md md:text-lg text-slate-400">
-                        Di sini Anda dapat dengan mudah mengakses profil perusahaan, prosedur kerja, rekaman mutu, dan dokumen penting lainnya untuk setiap departemen. Silakan gunakan menu di sebelah kiri untuk memulai navigasi.
+                    <p className="mt-4 text-sm sm:text-base text-slate-400">
+                        Jelajahi berbagai sumber daya penting mulai dari Manual Mutu, Prosedur Kerja, hingga Rekaman Mutu spesifik untuk setiap departemen.
                     </p>
+                    <div className="mt-8 pt-6 border-t border-white/10">
+                        <p className="text-md md:text-lg text-slate-300 font-medium">
+                            Untuk memulai, silakan gunakan <strong>menu navigasi</strong> di sisi kiri layar Anda.
+                        </p>
+                    </div>
                 </div>
               </div>
             </div>
